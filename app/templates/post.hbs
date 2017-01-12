@@ -1,4 +1,5 @@
-<h2 class="center">{{model.title}}</h2>
+<h2 class="center">POST{{model.title}}</h2>
 <h4 class="center">By {{model.author}}</h4>
 
 {{post-detail post=model destroyPost="destroyPost"}}
+{{update-post post=model update="update"}}
