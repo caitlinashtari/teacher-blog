@@ -2,8 +2,13 @@
 
 <p class="center">Where teachers become students</p>
 
-{{#each model as |post|}}
+{{#each model.posts as |post|}}
   {{post-tile post=post}}
 {{/each}}
 
 {{new-post savePost2="savePost3"}}
+
+<h2>All Comments</h2>
+{{#each model.comments as |comment|}}
+  <p>{{comment.comment}} By {{comment.author}}</p>
+{{/each}}

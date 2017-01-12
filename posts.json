@@ -10,5 +10,12 @@
     "description": "description2",
     "content": "content2",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg"
-  }]
+  }],
+  "comments": [{
+    "author": "Caitlin",
+    "comment": "I love this blog so much!"
+  }, {
+    "author": "Omid",
+    "comment": "This is the best blog ever!"
+    }]
 }
