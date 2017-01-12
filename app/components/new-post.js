@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         content: this.get('content'),
         image: this.get('image')
       };
-      this.set('addNewPost', false),
+      this.set('addNewPost', false);
       this.sendAction('savePost2', params);
     }
   }

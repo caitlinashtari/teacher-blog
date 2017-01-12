@@ -12,3 +12,5 @@
 {{#each model.comments as |comment|}}
   <p>{{comment.comment}} By {{comment.author}}</p>
 {{/each}}
+
+{{new-comment saveComment="saveComment"}}
