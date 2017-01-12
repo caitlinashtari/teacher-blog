@@ -6,6 +6,10 @@ export default Ember.Component.extend({
       if(confirm('Are you sure?')) {
         this.sendAction('destroyPost', post);
       }
+    },
+
+    destroyComment(comment) {
+      this.sendAction('destroyComment', comment);
     }
   }
 });
