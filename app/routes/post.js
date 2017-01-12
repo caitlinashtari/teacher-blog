@@ -22,12 +22,12 @@ export default Ember.Route.extend({
 
     saveComment(params) {
       var newComment = this.store.createRecord('comment', params);
-      var comment = params.comment;
-      comment.get('comments').addObject(newComment);
+      var post = params.post;
+      post.get('comments').addObject(newComment);
       newComment.save().then(function() {
-        return comment.save();
+        return post.save();
       });
-      this.transitionTo('comment', comment);
+      this.transitionTo('post', post);
     }
   }
 });
